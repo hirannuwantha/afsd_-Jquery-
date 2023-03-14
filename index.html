@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- this is a navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-white" id="addStudentView" href="#">Add Student <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link text-white" id="loadAllView"  href="#">Load All<span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+<!-- -------------------------- -->
+
+<!-- this is a add student  -->
+<div id="addStudentPage">
+  <div class="form-style">
+    <form>
+
+      <div class="form-group">
+        <input placeholder="Enter Your ID" type="text" class="form-control text-center" id="id">
+      </div>
+
+      <div class="form-group">
+        <input  placeholder="Enter Your Name" type="text" class="form-control text-center" id="name">
+      </div>
+
+      <div class="form-group">
+        <input placeholder="Enter Your Address" type="text" class="form-control text-center" id="address">
+      </div>
+
+      <div class="form-group">
+        <input placeholder="Enter Your Salary" type="number" class="form-control text-center" id="salary">
+      </div>
+
+      <button type="button" id="clearAll" class="btn btn-secondary">Clear</button>
+      <button type="button" id="saveBtn" class="btn btn-primary">Save Student</button>
+    </form>
+  </div>
+</div>
+<!-- ----------------------------- -->
+
+<!-- this is a Load all -->
+<div style="display: none;" id="loadAllStudentPage">
+  <div class="table-style">
+    <table class="table" id="maintable">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Address</th>
+          <th scope="col">Salaray</th>
+        </tr>
+      </thead>
+      <tbody id="datatabale">
+      
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- ----------------------------- -->
+</body>
+
+<script src="main.js">
+
+  
+</script>
+
+<style>
+  
+</style>
+
+
+
+</html>
